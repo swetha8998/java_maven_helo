@@ -6,7 +6,7 @@ node{
        
         mavenPath = tool 'maven3'
        
-        sh "${mavenPath}/mvn command"
+        sh "${mavenPath}/mvn build"
     }
    
     stage("RUN"){
