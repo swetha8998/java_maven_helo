@@ -10,6 +10,6 @@ node{
     stage("RUN"){
         
         sh "javac src/main/java/Helloworld.java"
-        sh "java src/main/Helloworld"
+        sh "java Helloworld"
     }
 }
