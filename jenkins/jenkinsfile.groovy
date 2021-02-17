@@ -4,8 +4,7 @@ node{
     }
     stage("Build"){
        
-        
-      mvn clean configure install
+     sh "mvn clean verify"
     }
    
     stage("RUN"){
