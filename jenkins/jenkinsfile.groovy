@@ -4,9 +4,8 @@ node{
     }
     stage("Build"){
        
-        mavenPath = tool 'maven3'
-       
-        sh "${mavenPath}/mvn command"
+        
+      mvn clean configure install
     }
    
     stage("RUN"){
