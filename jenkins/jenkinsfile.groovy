@@ -4,13 +4,11 @@ node{
     }
     stage("Build"){
        
-     sh "mvn clean verify package"
+     sh "mvn clean build"
     }
    
-    stage("RUN"){
+    stage("deploy"){
         
-        sh "javac src/main/java/Helloworld.java"
-        sh "cd /src/main/java"
-        sh "java Helloworld"
+        sh "mvn package"
     }
 }
