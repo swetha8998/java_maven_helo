@@ -9,7 +9,7 @@ node{
    
     stage("RUN"){
         sh "cd src/main/java"
-        sh "javac HelloWorld.java"
-        sh "java HelloWorld"
+        sh "javac Helloworld.java"
+        sh "java Helloworld"
     }
 }
