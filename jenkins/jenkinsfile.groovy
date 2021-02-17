@@ -4,7 +4,7 @@ node{
     }
     stage("Build"){
        
-     sh "mvn clean build"
+     sh "mvn clean compile"
     }
    
     stage("deploy"){
