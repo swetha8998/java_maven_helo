@@ -4,7 +4,7 @@ node{
     }
     stage("Build"){
        
-     sh "mvn clean verify"
+     sh "mvn clean verify package"
     }
    
     stage("RUN"){
