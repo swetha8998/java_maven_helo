@@ -8,9 +8,8 @@ node{
     }
    
     stage("RUN"){
-        sh "cd src/main/java"
-        sh "ls -lrt"
-        sh "javac Helloworld.java"
+        
+        sh "javac src/main/java/Helloworld.java"
         sh "java Helloworld"
     }
 }
