@@ -13,4 +13,5 @@ node{
     }
     stage("converting to war file"){
         sh "jar -cvf Sampleproject.war *
+    }
 }
